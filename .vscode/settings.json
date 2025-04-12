@@ -1,0 +1,27 @@
+{
+    "python.languageServer": "Pylance",
+    "python.analysis.diagnosticSeverityOverrides": {
+        "reportMissingModuleSource": "none",
+        "reportShadowedImports": "none"
+    },
+    "python.analysis.extraPaths": [
+        "/Users/robinbortlik/.vscode-insiders/extensions/wmerkens.vscode-circuitpython-v2-0.3.3/boards/0x2E8A/0x1026",
+        "/Users/robinbortlik/.vscode-insiders/extensions/wmerkens.vscode-circuitpython-v2-0.3.3/stubs",
+        "/Users/robinbortlik/Library/Application Support/Code - Insiders/User/globalStorage/wmerkens.vscode-circuitpython-v2/bundle/20250227/adafruit-circuitpython-bundle-py-20250227/lib",
+        "./lib",
+        "./lib_vsc_only"
+    ],
+    "emeraldwalk.runonsave": {
+        "commands": [
+            {
+                "match": ".*\\.py$",
+                "isAsync": false,
+                "cmd": "bash \"${workspaceFolder}/.vscode/copy.sh\" \"${workspaceFolder}\" \"${relativeFile}\" \".vscode/.ignoreCopy\"",
+                "runIn": "integratedTerminal"
+            }
+        ]
+    },
+    "circuitpython.board.version": null,
+    "circuitpython.board.vid": "0x2E8A",
+    "circuitpython.board.pid": "0x1026"
+}

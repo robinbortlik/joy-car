@@ -1,0 +1,12 @@
+{
+    "recommendations": [
+        "ms-python.python",
+        "wmerkens.vscode-circuitpython-v2",
+        "MagicStack.MagicPython",
+        "VisualStudioExptTeam.vscodeintellicode",
+        "emeraldwalk.runonsave",
+        "eamodio.gitlens",
+        "github.vscode-pull-request-github",
+        "makinteract.micro-bit-python",
+    ]
+}
