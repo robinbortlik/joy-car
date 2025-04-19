@@ -21,7 +21,7 @@ class Robot:
     def __init__(self, control_unit, navigation):
         """
         Initialize the robot with control unit and navigation system.
-        
+
         Args:
             control_unit: ControlUnit instance for motor and sensor control
             navigation: Navigation instance for route planning
@@ -43,19 +43,19 @@ class Robot:
         """
         Main control loop that implements the robot's state machine.
         This function is called repeatedly to update the robot's state and behavior.
-        
+
         The state machine handles:
         1. Obstacle detection (not implemented yet)
         2. Line following
         3. Intersection detection and handling
         4. Turn execution
         5. Error conditions (e.g., lost line)
-        
+
         State transitions:
         - DRIVING -> BREAK -> MOVE_TO_INTERSECTION -> RESOLVE_INTERSECTION -> (TURN_LEFT/TURN_RIGHT/DRIVING)
         - DRIVING -> ERROR (when line is lost for too long)
         - Any state -> FINISH (when mission is complete)
-        
+
         Each state has specific conditions for transitions and associated actions.
         """
         # Check for obstacles

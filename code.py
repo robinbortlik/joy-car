@@ -13,11 +13,19 @@ from battery import Battery
 if __name__ == "__main__":
 
     navigation = Navigation(turns=[
+        Navigation.FORWARD,
+        Navigation.LEFT,
+        Navigation.RIGHT,
+        Navigation.LEFT,
+        Navigation.FORWARD,
+        Navigation.LEFT,
+        Navigation.FORWARD,
         Navigation.LEFT,
         Navigation.FORWARD,
         Navigation.RIGHT,
         Navigation.LEFT,
-        Navigation.RIGHT,
+        Navigation.LEFT
+
     ])
 
     control_unit = ControlUnit(

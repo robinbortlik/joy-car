@@ -14,7 +14,7 @@ class ControlUnit:
     def __init__(self, line_sensors, motors, obstacle_sensor, lights):
         """
         Initialize the control unit with required sensors and actuators.
-        
+
         Args:
             line_sensors: Line sensor interface
             motors: Motor control interface
@@ -35,7 +35,7 @@ class ControlUnit:
     def is_obstacle(self):
         """
         Check if an obstacle is detected.
-        
+
         Returns:
             bool: True if obstacle is detected, False otherwise
         """
@@ -44,7 +44,7 @@ class ControlUnit:
     def execute_movement(self, command):
         """
         Execute a movement command based on the given command.
-        
+
         Args:
             command: The movement command to execute
         """
@@ -75,16 +75,16 @@ class ControlUnit:
         Execute a left turn maneuver.
         """
         self.lights.indicate_left()
-        self.motors.move(Motors.LEFT, Motors.BACKWARD, self.speed(90))
-        self.motors.move(Motors.RIGHT, Motors.FORWARD, self.speed(90))
+        self.motors.move(Motors.LEFT, Motors.BACKWARD, self.speed(110))
+        self.motors.move(Motors.RIGHT, Motors.FORWARD, self.speed(110))
 
     def __turn_right(self):
         """
         Execute a right turn maneuver.
         """
         self.lights.indicate_right()
-        self.motors.move(Motors.LEFT, Motors.FORWARD, self.speed(90))
-        self.motors.move(Motors.RIGHT, Motors.BACKWARD, self.speed(90))
+        self.motors.move(Motors.LEFT, Motors.FORWARD, self.speed(110))
+        self.motors.move(Motors.RIGHT, Motors.BACKWARD, self.speed(110))
 
     def __move_forward(self):
         """
